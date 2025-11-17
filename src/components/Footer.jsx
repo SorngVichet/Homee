@@ -1,0 +1,107 @@
+import React from "react";
+
+const Footer = () => {
+  return (
+    <footer id="site-footer" style={{ height: "fit-content", width: "100%" }}>
+      <div className="container">
+        <div className="footer-top">
+          <div className="row">
+            <div className="col-12 col-md-6 col-lg-3 mb-4">
+              <h5>About The Moon Shopper</h5>
+              <p>
+                We bring you the latest fashion trends and stylish outfits for
+                every occasion. From casual wear to elegant dresses, The Moon
+                Shoper offers quality, comfort, and confidence in every piece.
+                Shop your favorite styles online — fashion made simple and
+                affordable!
+              </p>
+              <div className="social-icons mt-2" aria-label="Social links">
+                <a
+                  href="https://www.facebook.com/povchet120209240707?mibextid=wwXIfr&mibextid=wwXIfr"
+                  title="Facebook"
+                >
+                  <i className="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" title="Twitter">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" title="Instagram">
+                  <i className="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="https://youtube.com/@sorngvichet5727?si=jj0qMdlpjC-IFV1A"
+                  title="YouTube"
+                >
+                  <i className="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+
+            <div className="col-12 col-md-6 col-lg-3 mb-4">
+              <h5>Quick Links</h5>
+              <div className="footer-links">
+                <a href="#">Home</a>
+                <a href="./category.html">Cart</a>
+                <a href="#">Menu</a>
+                <a href="#">App</a>
+                <a href="#">Contact Us</a>
+              </div>
+            </div>
+
+            <div className="col-12 col-md-6 col-lg-3 mb-4">
+              <h5>Contact Us</h5>
+              <div className="contact-item">
+                <i className="fas fa-phone"></i>
+                <span>+855 81-981-012</span>
+              </div>
+              <div className="contact-item">
+                <i className="fas fa-envelope"></i>
+                <span>sorngvichet168@gmail.com</span>
+              </div>
+              <div className="contact-item">
+                <i className="fas fa-map-marker-alt"></i>
+                <span>Phnom Penh, Cambodia</span>
+              </div>
+            </div>
+
+            <div className="col-12 col-md-6 col-lg-3 mb-4">
+              <h5>Subscribe</h5>
+              <p>Get updates on new arrivals and special offers.</p>
+              <form
+                id="subscribe-form"
+                className="subscribe-input"
+                onsubmit="return handleSubscribe(event);"
+              >
+                <input
+                  type="email"
+                  id="subscriber-email"
+                  placeholder="Email address"
+                  required
+                  aria-label="Email address"
+                />
+                <button type="submit" class="btn">
+                  Subscribe
+                </button>
+              </form>
+              <div
+                id={"subscribe-msg"}
+                style={{
+                  marginTop: "8px",
+                  fontSize: "14px",
+                  color: "#bfe7c7",
+                  display: "none",
+                }}
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <div className="footer-bottom">
+          <span id={"year"}></span> The-Moon-Shopper. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
