@@ -8,7 +8,7 @@ const Homepage = () => {
         <div className=" relative border d-none d-lg-flex p-3 items-center  justify-center gap-1 ">
           <div
             style={{ width: "130px", height: "fit-content" }}
-            className=" flex flex-col border  skew-y-6 "
+            className=" flex flex-col border  skew-y-8 "
           >
             <div
               style={{ height: "200px" }}
@@ -24,7 +24,7 @@ const Homepage = () => {
           </div>
           <div
             style={{ width: "130px", height: "fit-content" }}
-            className=" flex flex-col  -skew-y-6"
+            className=" flex flex-col  -skew-y-8"
           >
             <div
               style={{ height: "200px" }}
@@ -40,7 +40,7 @@ const Homepage = () => {
           </div>
           <div
             style={{ width: "130px", height: "fit-content" }}
-            className=" flex flex-col border skew-y-6"
+            className=" flex flex-col border skew-y-8"
           >
             <div
               style={{ height: "200px" }}
